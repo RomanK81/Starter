@@ -7,5 +7,10 @@ export const navItems = [
       variant: 'info',
       text: 'NEW'
     }
+  },
+  {
+    name: 'Books',
+    url: '/books',
+    icon: 'icon-pencil',
   }
 ];
