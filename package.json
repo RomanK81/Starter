@@ -19,7 +19,7 @@
   "license": "https://coreui.io/pro/license/",
   "scripts": {
     "ng": "ng",
-    "start": "ng build && node ./bin/www",
+    "start": "ng build && node ./server/bin/www",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
