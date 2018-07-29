@@ -6,5 +6,7 @@ import { Router } from '@angular/router';
 })
 export class DashboardComponent implements OnInit {
 
-  ngOnInit(): void { }
+  ngOnInit(): void {
+    console.log("Start dashboard");   
+   }
 }

@@ -11,6 +11,6 @@ export const navItems = [
   {
     name: 'Books',
     url: '/books',
-    icon: 'icon-pencil',
+    icon: 'icon-pencil'
   }
 ];

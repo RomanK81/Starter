@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "ng": {
+    "starter": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -11,7 +11,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist",
+            "outputPath": "dist/starter",
             "index": "src/index.html",
             "main": "src/main.ts",
             "tsConfig": "src/tsconfig.app.json",
@@ -56,18 +56,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "ng:build"
+            "browserTarget": "starter:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "ng:build:production"
+              "browserTarget": "starter:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "ng:build"
+            "browserTarget": "starter:build"
           }
         },
         "test": {
@@ -109,8 +109,8 @@
         }
       }
     },
-    "ng-e2e": {
-      "root": "",
+    "starter-e2e": {
+      "root": "e2e/",
       "sourceRoot": "",
       "projectType": "application",
       "architect": {
@@ -118,7 +118,12 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "./protractor.conf.js",
-            "devServerTarget": "ng:serve"
+            "devServerTarget": "starter:serve"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "starter:serve:production"
+            }
           }
         },
         "lint": {
@@ -135,7 +140,7 @@
       }
     }
   },
-  "defaultProject": "ng",
+  "defaultProject": "starter",
   "schematics": {
     "@schematics/angular:component": {
       "prefix": "app",

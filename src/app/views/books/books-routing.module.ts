@@ -8,7 +8,7 @@ import { BookEditComponent } from './book-edit/book-edit.component';
 
 const booksRoutes: Routes = [
   {
-    path: 'books',
+    path: '',
     component: BookComponent,
     data: { title: 'Book List' }
   },
@@ -26,13 +26,35 @@ const booksRoutes: Routes = [
     path: 'book-edit/:id',
     component: BookEditComponent,
     data: { title: 'Edit Book' }
-  },
-//   { 
-//     path: '',
-//     redirectTo: '/books',
-//     pathMatch: 'full'
-//   }
+  }
 ];
+
+// const booksRoutes: Routes = [
+//   {
+//     path: '',
+//     component: BookComponent,
+//     data: {
+//       title: 'Books'
+//     },
+//     children: [
+//       {
+//         path: 'book-details/:id',
+//         component: BookDetailComponent,
+//         data: { title: 'Book Details' }
+//       },
+//       {
+//         path: 'book-create',
+//         component: BookCreateComponent,
+//         data: { title: 'Create Book' }
+//       },
+//       {
+//         path: 'book-edit/:id',
+//         component: BookEditComponent,
+//         data: { title: 'Edit Book' }
+//       }
+//     ]
+//   }
+// ];
 
 @NgModule({
   imports: [RouterModule.forChild(booksRoutes)],

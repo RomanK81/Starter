@@ -51,7 +51,7 @@ export class BookEditComponent implements OnInit
     this.api.updateBook(this.id, form)
       .subscribe(res => {
           let id = res['_id'];
-          this.router.navigate(['/book-details', id]);
+          this.router.navigate(['books/book-details', id]);
         }, (err) => {
           console.log(err);
         }
@@ -59,7 +59,7 @@ export class BookEditComponent implements OnInit
   }
 
   bookDetails() {
-    this.router.navigate(['/book-details', this.id]);
+    this.router.navigate(['books/book-details', this.id]);
   }
 
 }

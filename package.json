@@ -1,17 +1,15 @@
 {
-  "name": "@coreui/coreui-pro-angular-admin-template",
+  "name": "starter",
   "version": "2.0.0",
-  "description": "CoreUI Pro Angular 2+ Admin Template",
+  "description": "Starter- first steps",
   "author": {
-    "name": "Łukasz Holeczek",
-    "url": "http://holeczek.pl",
-    "github": "https://github.com/mrholek",
-    "twitter": "https://twitter.com/lukaszholeczek"
+    "name": "Roman",
+    "github": "https://github.com/xpym81"
   },
   "contributors": [
     {
-      "name": "Andrzej Kopański",
-      "url": "https://github.com/xidedix"
+      "name": "Roman",
+      "url": "https://github.com/xpym81"
     }
   ],
   "homepage": "https://coreui.io/pro/angular",
@@ -19,7 +17,7 @@
   "license": "https://coreui.io/pro/license/",
   "scripts": {
     "ng": "ng",
-    "start": "ng build && node ./server/bin/www",
+    "start": "ng build && node ./backend/bin/www",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
@@ -50,12 +48,10 @@
     "body-parser": "^1.18.3",
     "chart.js": "2.7.2",
     "core-js": "2.5.7",
-    "express": "^4.16.3",
     "flag-icon-css": "3.0.0",
     "font-awesome": "^4.7.0",
     "http-errors": "^1.6.3",
     "moment": "2.22.2",
-    "mongoose": "^5.2.4",
     "morgan": "^1.9.0",
     "mutationobserver-shim": "^0.3.2",
     "ng-select": "^1.0.0-rc.5",

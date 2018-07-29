@@ -17,13 +17,16 @@ export class BookComponent implements OnInit
   constructor(private api: ApiService) { }
 
   ngOnInit() {
+
+    console.log("Start books");
+
     this.api.getBooks()
-    .subscribe(res => {
-      console.log(res);
-      this.books = res;
-    }, err => {
-      console.log(err);
-    });
+      .subscribe(res => {
+        console.log(res);
+        this.books = res;
+      }, err => {
+        console.log(err);
+      });
   }
 
 }
